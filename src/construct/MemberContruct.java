@@ -5,6 +5,14 @@ public class MemberContruct {
     int age;
     int grade;
 
+    //추가(생성자 오버로딩)
+    MemberContruct(String name, int age){
+        this(name, age, 50); // 중복 변경 this()를 통해서 자신의 생성자를 호출할 수 있다, 생성자 첫출에서만 가능하다
+        //this.name = name;
+        //this.age = age;
+        //this.grade = 50;
+    }
+
     MemberContruct(String name, int age, int grade){
         System.out.println("생성자 호출 name = " + name + ", age = " + age + ", grade = " + grade);
         this.name = name;
