@@ -1,4 +1,4 @@
-package extends1.ex2;
+package extends1.ex3;
 
 public class ElectricCar  extends Car{
     
@@ -6,7 +6,4 @@ public class ElectricCar  extends Car{
         System.out.println("충전합니다");
     }
 
-    public void move(){
-        System.out.println("전기차 이동합니다");
-    }
 }
